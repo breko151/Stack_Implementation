@@ -3,7 +3,7 @@
 Stack createStack(){
     Stack newStack;
     newStack.top = 0;
-    return dishes;
+    return newStack;
 }
 
 int isEmpty(Stack cloneStack) {
@@ -32,7 +32,6 @@ int pop(Stack *myStack) {
     }
     int finalValue = 0;
     finalValue = myStack->list[myStack->top - 1];
-    myStack->list[myStack->top - 1] = NULL;
     myStack->top = myStack->top - 1;
     return finalValue;
 }

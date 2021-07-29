@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define RANGE 100
 
 typedef struct {
     int top;
-    int list[100];
+    int list[RANGE];
 } Stack;
 
 Stack createStack();
